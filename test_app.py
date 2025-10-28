@@ -14,7 +14,7 @@ def test_app_prediction():
         "age": 12,
         "weight": 40,
         "height": 1.34,
-        "income_lpa": 0,
+        "income_lpa": 5,
         "smoker": True,
         "city": "Pune",
         "occupation": "freelancer"
