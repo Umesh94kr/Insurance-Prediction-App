@@ -3,9 +3,13 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 import pickle
 import pandas as pd
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, 'model.pkl')
 
 # load model 
-with open('/model.pkl', 'rb') as f:
+with open(MODEL_PATH, 'rb') as f:
     model = pickle.load(f)
 
 app = FastAPI()
