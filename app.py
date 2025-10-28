@@ -5,7 +5,7 @@ import pickle
 import pandas as pd
 
 # load model 
-with open('/Users/umesh/Desktop/Projects/MLOPs_series/Insurance_Prediction_App/model.pkl', 'rb') as f:
+with open('/model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 app = FastAPI()
