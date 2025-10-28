@@ -1,0 +1,8 @@
+scikit-learn
+pandas
+numpy
+fastapi
+pydantic
+streamlit
+requests
+httpx
