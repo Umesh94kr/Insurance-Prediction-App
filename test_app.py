@@ -21,4 +21,6 @@ def test_app_prediction():
     }
     response = client.post('/predict', json=input_data)  # <-- send JSON body to FastAPI
     assert response.status_code == 200
-    assert "prediction" in response.json()  # example: check returned JSON
+    data = response.json()
+    assert "predicted_category" in data  # example: check returned JSON
+    assert data["predicted_category"] in ["Low", "Medium", "High"]
